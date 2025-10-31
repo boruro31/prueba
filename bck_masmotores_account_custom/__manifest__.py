@@ -19,13 +19,10 @@
     # any module necessary for this one to work correctly
     "depends": [
         'account',
-        'bck_masmotores_account',
     ],
     # always loaded
     "data": [
-        'views/report_invoice_branding.xml',
-        'views/account_move_views.xml',
-        'views/cancel_reason_wizard_views.xml',
-        'security/ir.model.access.csv',
+        'reports/report_actions.xml',
+        'reports/report_invoice_company2.xml',
     ],
 } 

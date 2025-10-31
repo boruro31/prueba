@@ -1,125 +1,32 @@
-# Translation file for bck_masmotores_account_custom
-# Spanish translations for cancellation reasons
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Damaged during transport"
-msgstr "Piezas golpeadas, rayadas o rotas durante el transporte"
+#. module: prueba
+#: report:prueba.report_invoice_company2
+msgid "Factura Especial"
+msgstr "Factura Especial"
 
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Packaging damaged"
-msgstr "Empaques dañados que comprometen la integridad del producto"
+#: report:prueba.report_invoice_company2
+msgid "Cliente"
+msgstr "Cliente"
 
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Components failure"
-msgstr "Componentes con fallas eléctricas o mecánicas"
+#: report:prueba.report_invoice_company2
+msgid "Fecha"
+msgstr "Fecha"
 
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Incorrect items received"
-msgstr "Recepción de piezas incorrectas (modelo, serie o tipo distinto al solicitado)"
+#: report:prueba.report_invoice_company2
+msgid "Producto"
+msgstr "Producto"
 
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Incorrect quantities"
-msgstr "Cantidades incorrectas"
+#: report:prueba.report_invoice_company2
+msgid "Cantidad"
+msgstr "Cantidad"
 
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Missing from purchase order"
-msgstr "Faltantes respecto a la orden de compra"
+#: report:prueba.report_invoice_company2
+msgid "Precio Unitario"
+msgstr "Precio Unitario"
 
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Excess from purchase order"
-msgstr "Sobrantes respecto a la orden de compra"
+#: report:prueba.report_invoice_company2
+msgid "Subtotal"
+msgstr "Subtotal"
 
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Price difference"
-msgstr "Diferencias entre el precio cotizado y el facturado"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Incorrect charges"
-msgstr "Facturas con cargos indebidos o impuestos incorrectos"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Item not for customer"
-msgstr "La pieza no era/cliente"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Item not for seller"
-msgstr "La pieza no era/vendedor"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Not compatible"
-msgstr "No fue compatible"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Damaged item"
-msgstr "Pieza dañada"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Incomplete item"
-msgstr "Pieza (juego) incompleta"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Incorrect customer info"
-msgstr "El cliente mandó mal su información"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Incorrect seller info"
-msgstr "El vendedor mandó mal la información"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Shipping error"
-msgstr "Error de la paquetería"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Cash warranty"
-msgstr "Garantía en efectivo"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Item exchange"
-msgstr "Cambio de pieza"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Merchandise credit"
-msgstr "Crédito por mercancía"
-
-#. module: bck_masmotores_account_custom
-#: model:account.move,field_description:account.move.cancellation_reason
-msgid "Customer canceled"
-msgstr "Cliente canceló la compra"
-
-#. module: bck_masmotores_account_custom
-#: model:ir.model.fields,field_description:bck_masmotores_account_custom.cancellation_reason
-msgid "Cancellation Reason"
-msgstr "Motivo de Cancelación"
-
-#. wizard button
-msgid "Confirm"
-msgstr "Confirmar"
-
-msgid "Cancel"
-msgstr "Cancelar"
-
-#. Warnings
-msgid "The invoice is already canceled. Are you sure you want to change the cancellation reason?"
-msgstr "La factura ya está cancelada. ¿Está seguro de modificar el motivo de cancelación?"
-
-msgid "You must select a cancellation reason."
-msgstr "Debe seleccionar un motivo de cancelación."
+#: report:prueba.report_invoice_company2
+msgid "Total"
+msgstr "Total"
