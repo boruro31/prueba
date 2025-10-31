@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Acción del reporte -->
+    <record id="report_invoice_branding_action" model="ir.actions.report">
+        <field name="name">Factura MasMotores Branding</field>
+        <field name="model">account.move</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">bck_masmotores_invoice_branding.report_invoice_branding</field>
+        <field name="report_file">bck_masmotores_invoice_branding.report_invoice_branding</field>
+        <field name="binding_model_id" ref="account.model_account_move"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <!-- Plantilla del reporte -->
+    <template id="report_invoice_branding">
+        <!-- Solo mostrar el reporte si pertenece a la empresa correcta -->
+        <t t-if="o.company_id.name == 'Comercializadora de Autopartes Alvarez'">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2 style="text-align:center;">Factura MasMotores Branding</h2>
+                    <p><strong>Cliente:</strong> <t t-esc="o.partner_id.name"/></p>
+                    <p><strong>Folio:</strong> <t t-esc="o.name"/></p>
+                    <p><strong>Fecha:</strong> <t t-esc="o.invoice_date"/></p>
+
+                    <table class="table table-sm o_main_table" style="width:100%; margin-top:20px;">
+                        <thead>
+                            <tr>
+                                <th>Descripción</th>
+                                <th>Cantidad</th>
+                                <th>Precio Unitario</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="o.invoice_line_ids" t-as="line">
+                                <tr>
+                                    <td><t t-esc="line.name"/></td>
+                                    <td><t t-esc="line.quantity"/></td>
+                                    <td><t t-esc="line.price_unit"/></td>
+                                    <td><t t-esc="line.price_subtotal"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+
+                    <p style="text-align:right; margin-top:20px;">
+                        <strong>Total:</strong> <t t-esc="o.amount_total"/>
+                    </p>
+                </div>
+            </t>
+        </t>
+
+        <!-- Si NO pertenece a la empresa Alvarez -->
+        <t t-else="">
+            <div class="page">
+                <h3 style="text-align:center; color:red; margin-top:50px;">
+                    ⚠️ Este reporte solo está disponible para la empresa “Comercializadora de Autopartes Alvarez”.
+                </h3>
+            </div>
+        </t>
+    </template>
+</odoo>
